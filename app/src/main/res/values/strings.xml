@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Reto 9</string>
+    <string name="title_home">Home</string>
+    <string name="create_company">Create Company</string>
+    <string name="title_name_company">Company</string>
+    <string name="title_url_company">Url</string>
+    <string name="title_phone_company">Phone</string>
+    <string name="title_email_company">Email</string>
+    <string name="title_clasification_company">Classification</string>
+    <string name="title_name_product">Product</string>
+    <string name="title_price_product">Price</string>
+    <string name="clas_prompt">Choose a Classification</string>
+    <string-array name="clas_array">
+        <item>Select Classification</item>
+        <item>Consultancy</item>
+        <item>Custom Development</item>
+        <item>Software Factory</item>
+    </string-array>
+</resources>

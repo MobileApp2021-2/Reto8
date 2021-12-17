@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".CreateCompanyActivity">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_weight="0"
+            android:text="@string/title_name_company"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/titleNamecompany"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:gravity="center" />
+
+        <EditText
+            android:layout_weight="0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:id="@+id/nameCompany"
+            android:hint="Enter Company Name"
+            android:gravity="center_vertical|center" />
+
+        <TextView
+            android:layout_weight="0"
+            android:text="@string/title_url_company"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/titleUrl"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:gravity="center" />
+
+        <EditText
+            android:layout_weight="0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:id="@+id/urlCompany"
+            android:hint="Enter Company Url"
+            android:gravity="center_vertical|center" />
+        <TextView
+            android:layout_weight="0"
+            android:text="@string/title_phone_company"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/titlePhoneCompany"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:gravity="center" />
+
+        <EditText
+            android:layout_weight="0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:textSize="12sp"
+            android:id="@+id/phoneCompanyCompany"
+            android:hint="Enter Company Phone"
+            android:gravity="center_vertical|center" />
+        <TextView
+            android:layout_weight="0"
+            android:text="@string/title_email_company"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/titleEmailcompany"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:gravity="center" />
+
+        <EditText
+            android:layout_weight="0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:textSize="12sp"
+            android:id="@+id/emailcompany"
+            android:hint="Enter Company Email"
+            android:gravity="center_vertical|center" />
+        <TextView
+            android:layout_weight="0"
+            android:text="@string/title_clasification_company"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/titleClassification"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:gravity="center" />
+        <Spinner
+            android:layout_weight="0"
+            android:id="@+id/classification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:prompt="@string/clas_prompt" />
+
+        <TextView
+            android:layout_weight="0"
+            android:text="Products"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/purple_500"
+            android:textStyle="bold"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_weight="0"
+            android:text="@string/title_name_product"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/titleNameProduct"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:gravity="center" />
+
+        <EditText
+            android:layout_weight="0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:textSize="12sp"
+            android:id="@+id/nameProduct"
+            android:hint="Enter Product Name"
+            android:gravity="center_vertical|center" />
+        <TextView
+            android:layout_weight="0"
+            android:text="@string/title_price_product"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/titlePriceProduct"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:gravity="center" />
+
+        <EditText
+            android:layout_weight="0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:textSize="12sp"
+            android:id="@+id/productPrice"
+            android:hint="Enter Product Price"
+            android:gravity="center_vertical|center" />
+
+
+        <Button
+            android:id="@+id/createProduct"
+            android:layout_weight="0"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:textSize="25sp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="@color/teal_700"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Add product" />
+
+        <ListView
+            android:id="@+id/listProducts"
+            android:layout_marginRight="5dp"
+            android:dividerHeight="1dp"
+            android:divider="@color/black"
+            android:layout_marginLeft="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"/>
+
+        <TextView
+            android:id="@+id/emptyList"
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            android:text="There aren't products"/>
+
+        <Button
+            android:id="@+id/createCompany"
+            android:layout_weight="0"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:textSize="25sp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="CREATE" />
+
+        <Button
+            android:id="@+id/updateCompany"
+            android:layout_weight="0"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:textSize="25sp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="UPDATE" />
+    </LinearLayout>
+
+
+</androidx.core.widget.NestedScrollView>
