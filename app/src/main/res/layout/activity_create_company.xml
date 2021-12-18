@@ -16,7 +16,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/titleNamecompany"
-            android:textSize="12sp"
+            android:textSize="14sp"
             android:textStyle="bold"
             android:gravity="center" />
 
@@ -24,7 +24,7 @@
             android:layout_weight="0"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="12sp"
+            android:textSize="14sp"
             android:id="@+id/nameCompany"
             android:hint="Enter Company Name"
             android:gravity="center_vertical|center" />
@@ -43,7 +43,7 @@
             android:layout_weight="0"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="12sp"
+            android:textSize="14sp"
             android:id="@+id/urlCompany"
             android:hint="Enter Company Url"
             android:gravity="center_vertical|center" />
@@ -53,7 +53,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/titlePhoneCompany"
-            android:textSize="12sp"
+            android:textSize="14sp"
             android:textStyle="bold"
             android:gravity="center" />
 
@@ -62,7 +62,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="number"
-            android:textSize="12sp"
+            android:textSize="14sp"
             android:id="@+id/phoneCompanyCompany"
             android:hint="Enter Company Phone"
             android:gravity="center_vertical|center" />
@@ -72,7 +72,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/titleEmailcompany"
-            android:textSize="12sp"
+            android:textSize="14sp"
             android:textStyle="bold"
             android:gravity="center" />
 
@@ -81,7 +81,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textEmailAddress"
-            android:textSize="12sp"
+            android:textSize="14sp"
             android:id="@+id/emailcompany"
             android:hint="Enter Company Email"
             android:gravity="center_vertical|center" />
@@ -91,7 +91,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/titleClassification"
-            android:textSize="12sp"
+            android:textSize="14sp"
             android:textStyle="bold"
             android:gravity="center" />
         <Spinner
@@ -99,7 +99,7 @@
             android:id="@+id/classification"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="12sp"
+            android:textSize="14sp"
             android:gravity="center"
             android:prompt="@string/clas_prompt" />
 
@@ -110,7 +110,7 @@
             android:layout_marginBottom="20dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="14sp"
+            android:textSize="18sp"
             android:textColor="@color/purple_500"
             android:textStyle="bold"
             android:gravity="center" />
@@ -121,7 +121,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/titleNameProduct"
-            android:textSize="12sp"
+            android:textSize="14sp"
             android:textStyle="bold"
             android:gravity="center" />
 
@@ -130,7 +130,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="text"
-            android:textSize="12sp"
+            android:textSize="14sp"
             android:id="@+id/nameProduct"
             android:hint="Enter Product Name"
             android:gravity="center_vertical|center" />
@@ -140,7 +140,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/titlePriceProduct"
-            android:textSize="12sp"
+            android:textSize="14sp"
             android:textStyle="bold"
             android:gravity="center" />
 
@@ -149,7 +149,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="numberDecimal"
-            android:textSize="12sp"
+            android:textSize="14sp"
             android:id="@+id/productPrice"
             android:hint="Enter Product Price"
             android:gravity="center_vertical|center" />
@@ -170,12 +170,12 @@
 
         <ListView
             android:id="@+id/listProducts"
-            android:layout_marginRight="5dp"
-            android:dividerHeight="1dp"
-            android:divider="@color/black"
-            android:layout_marginLeft="5dp"
             android:layout_width="match_parent"
-            android:layout_height="250dp"/>
+            android:layout_height="250dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:divider="@color/black"
+            android:dividerHeight="1dp" />
 
         <TextView
             android:id="@+id/emptyList"
@@ -207,6 +207,7 @@
             android:layout_marginRight="5dp"
             android:layout_marginLeft="5dp"
             android:textSize="25sp"
+            android:visibility="gone"
             android:layout_marginBottom="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

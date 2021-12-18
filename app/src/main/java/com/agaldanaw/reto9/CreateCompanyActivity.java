@@ -70,7 +70,6 @@ public class CreateCompanyActivity extends AppCompatActivity implements AdapterV
         ((Button)findViewById(R.id.createProduct)).setOnClickListener(new ButtonAddProduct(this));
         ((Button)findViewById(R.id.createCompany)).setOnClickListener(new ButtonCreateCompany(this));
         ((Button)findViewById(R.id.updateCompany)).setOnClickListener(new ButtonUpdateCompany(this));
-        ((Button)findViewById(R.id.updateCompany)).setVisibility(View.GONE);
 
         _list = new ArrayList<Product>();
 
@@ -80,8 +79,8 @@ public class CreateCompanyActivity extends AppCompatActivity implements AdapterV
             priceProduct.setVisibility(View.GONE);
             ((Button)findViewById(R.id.createProduct)).setVisibility(View.GONE);
             ((Button)findViewById(R.id.createCompany)).setVisibility(View.GONE);
-            ((TextView)findViewById(R.id.titleNameProduct)).setVisibility(View.GONE);
             ((TextView)findViewById(R.id.titlePriceProduct)).setVisibility(View.GONE);
+            ((TextView)findViewById(R.id.titleNameProduct)).setVisibility(View.GONE);
             _list = new ArrayList<Product>(MainActivity.helper.getProducts(this.companyId));
             adapterList = new MyAdapterProduct(this, android.R.layout.simple_list_item_1, _list);
             _listView.setAdapter(adapterList);
@@ -94,7 +93,6 @@ public class CreateCompanyActivity extends AppCompatActivity implements AdapterV
                 phoneCompany.setText(company.Phone);
                 emailCompany.setText(company.Email);
                 spinner.setSelection(getIdxSelectionSpinner(company.Clasification));
-                ((Button)findViewById(R.id.updateCompany)).setVisibility(View.VISIBLE);
 
                 if(!update)
                 {
@@ -103,9 +101,8 @@ public class CreateCompanyActivity extends AppCompatActivity implements AdapterV
                     emailCompany.setEnabled(false);
                     phoneCompany.setEnabled(false);
                     urlcompany.setEnabled(false);
+                    //((Button)findViewById(R.id.updateCompany)).setVisibility(View.VISIBLE);
                 }
-
-
             }
 
         }

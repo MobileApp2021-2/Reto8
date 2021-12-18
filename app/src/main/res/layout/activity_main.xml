@@ -10,7 +10,8 @@
         android:text="Filter"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="12sp"
+        android:textSize="20sp"
+        android:textColor="@color/teal_200"
         android:textStyle="bold"
         android:gravity="center" />
     <LinearLayout
@@ -23,7 +24,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/titleNamecompany"
-            android:textSize="12sp"
+            android:textSize="14sp"
             android:textStyle="bold"
             android:gravity="center" />
 
@@ -31,7 +32,7 @@
             android:layout_weight="0"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="12sp"
+            android:textSize="14sp"
             android:id="@+id/nameCompany"
             android:hint="Enter Company Name"
             android:gravity="center_vertical|center" />
@@ -42,7 +43,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/titleClassification"
-            android:textSize="12sp"
+            android:textSize="14sp"
             android:textStyle="bold"
             android:gravity="center" />
         <Spinner
@@ -50,7 +51,7 @@
             android:id="@+id/classification"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="12sp"
+            android:textSize="14sp"
             android:gravity="center"
             android:prompt="@string/clas_prompt" />
         <LinearLayout
@@ -97,18 +98,17 @@
         android:divider="@color/black"
         android:layout_marginLeft="5dp"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="450dp"/>
 
     <TextView
         android:id="@+id/emptyList"
         android:layout_width="match_parent"
         android:padding="10dp"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:textColor="@color/black"
         android:textStyle="bold"
         android:textAlignment="center"
         android:layout_gravity="center"
         android:textSize="20sp"
         android:text="There aren't companies"/>
-
 </LinearLayout>

@@ -77,6 +77,9 @@ public class SQLiteAdapter {
     @SuppressLint("Range")
     public ArrayList<Company> getCompaniesWithFilter(String nameFilter, String clasificationFilter)
     {
+        if(clasificationFilter.equals("Select Classification"))
+            clasificationFilter = null;
+
         SQLiteDatabase db = myhelper.getWritableDatabase();
         String[] columns = {myhelper.UID, myhelper.NAME_COMPANY,
                 myhelper.URL_COMPANY, myhelper.PHONE_COMPANY,
@@ -102,6 +105,15 @@ public class SQLiteAdapter {
             {
                 filter += "AND " + myhelper.CLASIFICATION + " LIKE ?";
                 args[1] = "%" + clasificationFilter + "%";
+            }
+        }
+        else
+        {
+            if(args[0] != null)
+            {
+                String tmp = args[0];
+                args = new String[1];
+                args[0] = tmp;
             }
         }
 
