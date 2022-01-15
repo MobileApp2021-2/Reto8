@@ -93,6 +93,7 @@ public class CreateCompanyActivity extends AppCompatActivity implements AdapterV
                 phoneCompany.setText(company.Phone);
                 emailCompany.setText(company.Email);
                 spinner.setSelection(getIdxSelectionSpinner(company.Clasification));
+                ((Button)findViewById(R.id.updateCompany)).setVisibility(View.VISIBLE);
 
                 if(!update)
                 {
@@ -101,7 +102,7 @@ public class CreateCompanyActivity extends AppCompatActivity implements AdapterV
                     emailCompany.setEnabled(false);
                     phoneCompany.setEnabled(false);
                     urlcompany.setEnabled(false);
-                    //((Button)findViewById(R.id.updateCompany)).setVisibility(View.VISIBLE);
+                    ((Button)findViewById(R.id.updateCompany)).setVisibility(View.GONE);
                 }
             }
 
